@@ -1,0 +1,17 @@
+project_root/
+│
+├── server/
+│   ├── server.py               # Main server script for handling clients and voice streaming
+│   ├── user_db.py              # User database handling login, registration, and status
+│   └── config.py               # Server configuration file (host, port)
+│
+├── client/
+│   ├── client.py               # Main client script for handling GUI and voice streaming
+│   ├── gui.py                  # GUI implementation for chat, status, and calls
+│   ├── config.py               # Client configuration file (server host, port)
+│   └── requirements.txt        # Python dependencies (e.g., pyaudio, bcrypt, tkinter)
+│
+└── shared/
+    ├── audio_processing.py     # Contains utility functions for audio encoding/decoding
+    ├── voice_streaming.py      # Contains UDP voice streaming functionality for both client and server
+    └── user_db.py              # Handles user authentication and database (mocked for simplicity)
